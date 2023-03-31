@@ -1,0 +1,90 @@
+.main {
+  height: 93vh;
+  background-image: var(--image-gradient), url("../assets/home-bg.jpg");
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(5, 8, 40, 0.87),
+    rgba(1, 4, 39, 0.925)
+  );
+}
+
+.skill-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  padding-top: 5%;
+  color: #7500fa;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+
+  .first {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+
+  .second {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
+  .skill {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Optional: center the content */
+
+    img {
+      width: 100px;
+      display: block; /* Optional: make the image a block element */
+      margin: 0 auto;
+    }
+    h3 {
+      margin-top: 10px;
+      color: #7500fa;
+    }
+  }
+  .skill1 {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    img {
+      width: 100px;
+      display: block; /* Optional: make the image a block element */
+      margin: 0 auto;
+    }
+    h3 {
+      margin-top: 10px;
+      color: #7500fa;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    height: auto;
+  }
+  .skills-wrapper {
+    margin-left: 0%;
+    padding-bottom: 8%;
+  }
+}
+.resume {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}

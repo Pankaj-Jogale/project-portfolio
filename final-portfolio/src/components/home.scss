@@ -1,0 +1,158 @@
+.new {
+  .container123 {
+    background-image: url("../assets/about.png");
+    display: flex;
+    flex-direction: row;
+    min-height: 94vh;
+    // width: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    background-image: var(--image-gradient), url("../assets/home-bg.jpg");
+    --image-gradient: linear-gradient(
+      to bottom left,
+      rgba(5, 8, 40, 0.87),
+      rgba(1, 4, 39, 0.925)
+    );
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    // padding-top: 4%;
+    flex: 2;
+    color: whitesmoke;
+    .msg {
+      display: flex;
+      flex-direction: row;
+      margin-left: 30%;
+      h4 {
+        padding-right: 10px;
+      }
+      .main-name {
+        padding-left: 10px;
+        color: #7500fa;
+      }
+    }
+    span {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .bottom {
+    margin-left: 20%;
+    padding-top: 10%;
+    animation: none;
+    font-size: 18px;
+    font-weight: bold;
+    span {
+      margin-left: 20%;
+      padding-bottom: 20%;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .yellow {
+      color: #7500fa;
+    }
+    .footer {
+      margin-left: 100%;
+      margin-top: 5%;
+      width: 500px;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding-top: 0%;
+    padding-left: 5%;
+
+    img {
+      width: 80%;
+      max-height: 450px;
+    }
+  }
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container123 {
+    margin-top: 0%;
+
+    .left {
+      margin-top: 5%;
+
+      .msg {
+        width: 100%;
+        h3 {
+          font-size: 12px;
+          margin-bottom: 0%;
+        }
+      }
+      h2 {
+        font-size: 15px;
+      }
+      .bottom {
+        font-size: 10px;
+        margin-top: 10%;
+        width: 150%;
+        margin-left: 15%;
+
+        span {
+          font-size: 10px;
+          margin-left: 0%;
+        }
+      }
+    }
+    .right {
+      img {
+        position: absolute;
+        padding-top: 10%;
+        top: -3%;
+        left: 40%;
+        width: 60%;
+      }
+    }
+  }
+}

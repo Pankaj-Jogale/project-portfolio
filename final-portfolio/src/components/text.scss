@@ -1,0 +1,21 @@
+.new {
+  height: 20px;
+  .text {
+    margin-left: 30%;
+    margin-top: 2%;
+    color: #7500fa;
+  }
+}
+
+@media (max-width: 767px) {
+  .new {
+    .text {
+      width: 210px;
+      font-size: 18px;
+      margin-left: 30%;
+      color: #7500fa;
+    }
+  }
+}
+//style={{ height: "20px" }}
+//style={{ marginLeft: "270px", marginTop: "20px" }}
